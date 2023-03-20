@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6838f90a-ff98-434a-aa3e-75e9b725c61e" name="Changes" comment="This is all entities and relevant attributes along with builder patterns for the relevant entities." />
+    <list default="true" id="6838f90a-ff98-434a-aa3e-75e9b725c61e" name="Changes" comment="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +70,7 @@
       <workItem from="1679053029997" duration="1911000" />
       <workItem from="1679297259054" duration="1520000" />
       <workItem from="1679303502539" duration="5162000" />
-      <workItem from="1679311908008" duration="3959000" />
+      <workItem from="1679311908008" duration="4390000" />
     </task>
     <task id="LOCAL-00001" summary="Coffee System v0.0.0 - Base code&#10;This is the Coffee System layout with just the main, xmls and folders to begin on development of our coffee system for 2023. Ensure all naming conventions are camelCase and that all files and additional folders are named correctly.">
       <created>1679055180959</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679323567326</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes.">
+      <created>1679324050465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679324050465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,8 +127,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Coffee System v0.0.0 - Base code&#10;This is the Coffee System layout with just the main, xmls and folders to begin on development of our coffee system for 2023. Ensure all naming conventions are camelCase and that all files and additional folders are named correctly." />
     <MESSAGE value="Coffee System v0.0.1 - Base code&#10;&#10;Customer and CustomerOrder entities have been created using the correct Builder Pattern and attributes." />
-    <MESSAGE value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
     <MESSAGE value="This is all entities and relevant attributes along with builder patterns for the relevant entities." />
-    <option name="LAST_COMMIT_MESSAGE" value="This is all entities and relevant attributes along with builder patterns for the relevant entities." />
+    <MESSAGE value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Coffee System v0.0.3 - Helper and Factory&#10;&#10;All Factory and Helper classes have been updated to correct any invalid entries. All methods for validation are stored in the Helper classes. All building and restrictions to the entries are placed within the Factory classes." />
   </component>
 </project>
