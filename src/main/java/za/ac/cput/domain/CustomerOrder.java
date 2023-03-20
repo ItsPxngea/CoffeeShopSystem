@@ -6,7 +6,7 @@ import java.util.Objects;
 public class CustomerOrder {
     private String orderID;
     private String orderDescription;
-    private Date dateOfOrder;
+    private String dateOfOrder;
     private String paymentMethod;
     public Double totalPrice;
     public String customerID;
@@ -22,7 +22,7 @@ public class CustomerOrder {
         return orderDescription;
     }
 
-    public Date getDateOfOrder() {
+    public String getDateOfOrder() {
         return dateOfOrder;
     }
 
@@ -56,7 +56,7 @@ public class CustomerOrder {
         return "CustomerOrder{" +
                 "orderID='" + orderID + '\'' +
                 ", orderDescription='" + orderDescription + '\'' +
-                ", dateOfOrder=" + dateOfOrder +
+                ", dateOfOrder='" + dateOfOrder + '\'' +
                 ", paymentMethod='" + paymentMethod + '\'' +
                 ", totalPrice=" + totalPrice +
                 ", customerID='" + customerID + '\'' +
@@ -75,7 +75,7 @@ public class CustomerOrder {
     public static class Builder{
         private String orderID;
         private String orderDescription;
-        private Date dateOfOrder;
+        private String dateOfOrder;
         private String paymentMethod;
         public Double totalPrice;
         public String customerID;
@@ -90,7 +90,7 @@ public class CustomerOrder {
             return this;
         }
 
-        public Builder setDateOfOrder(Date dateOfOrder){
+        public Builder setDateOfOrder(String dateOfOrder){
             this.dateOfOrder = dateOfOrder;
             return this;
         }
@@ -100,8 +100,8 @@ public class CustomerOrder {
             return this;
         }
 
-        public Builder setTotalPrice(String totalPrice){
-            this.orderID = totalPrice;
+        public Builder setTotalPrice(Double totalPrice){
+            this.totalPrice = totalPrice;
             return this;
         }
 
@@ -110,13 +110,13 @@ public class CustomerOrder {
             return this;
         }
 
-        public Builder copy(CustomerOrder c){
-            this.orderID = c.customerID;
-            this.orderDescription = c.orderDescription;
-            this.dateOfOrder = c.dateOfOrder;
-            this.paymentMethod = c.paymentMethod;
-            this.totalPrice = c.totalPrice;
-            this.customerID = c.customerID;
+        public Builder copy(CustomerOrder customerOrder){
+            this.orderID = customerOrder.customerID;
+            this.orderDescription = customerOrder.orderDescription;
+            this.dateOfOrder = customerOrder.dateOfOrder;
+            this.paymentMethod = customerOrder.paymentMethod;
+            this.totalPrice = customerOrder.totalPrice;
+            this.customerID = customerOrder.customerID;
             return this;
         }
 
