@@ -6,7 +6,7 @@ public class SupplierOrder {
     private String orderID;
     private String supplierID;
     private String orderDescription;
-    private float orderPrice;
+    private double orderPrice;
     private String dateMade;
     private String dateDelivered;
 
@@ -25,7 +25,7 @@ public class SupplierOrder {
         return orderDescription;
     }
 
-    public float getOrderPrice() {
+    public double getOrderPrice() {
         return orderPrice;
     }
 
@@ -57,7 +57,7 @@ public class SupplierOrder {
         private String orderID;
         private String supplierID;
         private String orderDescription;
-        private float orderPrice;
+        private double orderPrice;
         private String dateMade;
         private String dateDelivered;
 
@@ -76,7 +76,7 @@ public class SupplierOrder {
             return this;
         }
 
-        public Builder setOrderPrice(float orderPrice){
+        public Builder setOrderPrice(double orderPrice){
             this.orderPrice = orderPrice;
             return this;
         }
