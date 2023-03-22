@@ -7,7 +7,7 @@ public class Chef {
     public String firstName;
     public String lastName;
 
-    private Chef(){
+    private Chef() {
 
     }
 
@@ -46,15 +46,14 @@ public class Chef {
     }
 
     private Chef(Builder build){
-        this.staffNumber = build.staffNumber;
-        this.firstName = build.firstName;
-        this.lastName = build.lastName;
-    }
 
+    }
     public static class Builder{
-        public String staffNumber;
-        public String firstName;
-        public String lastName;
+        private String staffNumber;
+        private String firstName;
+        private String lastName;
+       // private String phoneNumber;
+
 
         public Builder setStaffNumber(String staffNumber) {
             this.staffNumber = staffNumber;
@@ -70,11 +69,15 @@ public class Chef {
             this.lastName = lastName;
             return this;
         }
-
+        public Builder copy(Chef chef){
+            this.staffNumber = chef.staffNumber;
+            this.firstName = chef.firstName;
+            this.lastName = chef.lastName;
+            return this;
+        }
         public Chef build(){
             return new Chef(this);
         }
 
     }
-
 }

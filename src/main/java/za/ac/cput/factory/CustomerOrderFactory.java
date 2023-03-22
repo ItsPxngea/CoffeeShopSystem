@@ -4,8 +4,6 @@ import za.ac.cput.domain.CustomerOrder;
 import za.ac.cput.util.CustomerHelper;
 import za.ac.cput.util.CustomerOrderHelper;
 
-import java.util.*;
-
 public class CustomerOrderFactory {
     public static CustomerOrder buildCustomer(String orderDescription, String dateOfOrder, String paymentMethod, Double totalPrice) {
 
